@@ -60,7 +60,8 @@ flutter:
     - assets/my_splash_screen.png
     - assets/gifs/
     - assets/data/
-    - assets/icon/ 
+    - assets/icon/
+    - assets/data/verses.json
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
