@@ -8,6 +8,6 @@ class ProgressManager {
 
   static Future<void> setCurrentMode(int mode) async {
     final prefs = await SharedPreferences.getInstance();
-    prefs.setInt('currentMode', mode);
+    await prefs.setInt('currentMode', mode);
   }
 }
