@@ -56,6 +56,7 @@ class _VersePageState extends State<VersePage> {
 
   @override
   Widget build(BuildContext context) {
+    final String verseReference = ModalRoute.of(context)?.settings.arguments as String;
     if (verseText == null) {
       // Show loading indicator while fetching the verse
       return Scaffold(
