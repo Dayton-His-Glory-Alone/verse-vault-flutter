@@ -16,7 +16,7 @@ class DragAndDropMode extends StatefulWidget {
 
 class _DragAndDropModeState extends State<DragAndDropMode> {
   late List<String> words;
-  late List<String> blanks;
+  late List<String?> blanks;
   late List<String> pool;
 
   @override
@@ -27,31 +27,99 @@ class _DragAndDropModeState extends State<DragAndDropMode> {
 
   void _setupGame() {
     words = widget.verseText.split(' ');
-    blanks = [...words]; // Replace nouns with '_'.
-    pool = ['example', 'words']; // Add words to a pool.
+    blanks = List<String?>.from(words);
+
+    // Make every third word blank
+    for (int i = 2; i < words.length; i += 3) {
+      blanks[i] = null;
+    }
+
+    // Populate the pool with missing words
+    pool = words
+        .where((word) => blanks.contains(null) && !blanks.contains(word))
+        .toList();
+    pool.shuffle();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Wrap(
-          children: blanks
-              .map((word) => word == '_'
-                  ? Container(width: 50, height: 30, color: Colors.grey)
-                  : Text(word))
-              .toList(),
+    return Scaffold(
+      appBar: AppBar(title: const Text("Drag and Drop Game")),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            Wrap(
+              spacing: 8.0,
+              runSpacing: 8.0,
+              children: blanks.asMap().entries.map((entry) {
+                final index = entry.key;
+                final word = entry.value;
+
+                return word == null
+                    ? DragTarget<String>(
+                        builder: (context, candidateData, rejectedData) {
+                          return Container(
+                            width: 60,
+                            height: 30,
+                            color: Colors.grey.shade300,
+                            alignment: Alignment.center,
+                            child: const Text(
+                              '____',
+                              style: TextStyle(fontSize: 16),
+                            ),
+                          );
+                        },
+                        onAccept: (data) {
+                          setState(() {
+                            blanks[index] = data;
+                            pool.remove(data);
+
+                            // Check if the game is complete
+                            if (!blanks.contains(null)) {
+                              widget.onComplete();
+                            }
+                          });
+                        },
+                      )
+                    : Text(
+                        word,
+                        style: const TextStyle(fontSize: 16),
+                      );
+              }).toList(),
+            ),
+            const SizedBox(height: 20),
+            Wrap(
+              spacing: 8.0,
+              runSpacing: 8.0,
+              children: pool
+                  .map((word) => Draggable<String>(
+                        data: word,
+                        feedback: Material(
+                          color: Colors.transparent,
+                          child: Text(
+                            word,
+                            style: const TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        childWhenDragging: Opacity(
+                          opacity: 0.5,
+                          child: Text(
+                            word,
+                            style: const TextStyle(fontSize: 16),
+                          ),
+                        ),
+                        child: Text(
+                          word,
+                          style: const TextStyle(fontSize: 16),
+                        ),
+                      ))
+                  .toList(),
+            ),
+          ],
         ),
-        Wrap(
-          children: pool
-              .map((word) => Draggable<String>(
-                    data: word,
-                    feedback: Text(word),
-                    child: Text(word),
-                  ))
-              .toList(),
-        ),
-      ],
+      ),
     );
   }
 }
