@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:io'; // For local file storage
 import 'dart:convert'; // For JSON handling
+import 'package:intl/intl.dart'; // For date formatting
 
 class HomePage extends StatefulWidget {
   @override
@@ -8,47 +9,49 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final TextEditingController _verseController = TextEditingController();
-  final String _filePath = 'assets/data/verses.json';
+  final String _logFilePath = 'assets/data/completion_log.txt';
   List<Map<String, dynamic>> verses = [];
 
   @override
   void initState() {
     super.initState();
-    _loadVerses();
+    _loadCompletionLog();
   }
 
-  Future<void> _loadVerses() async {
+  /// Load the completion log from a local file
+  Future<void> _loadCompletionLog() async {
     try {
-      final file = File(_filePath);
+      final file = File(_logFilePath);
       if (file.existsSync()) {
         final content = await file.readAsString();
-        final data = json.decode(content) as Map<String, dynamic>;
+        final data = json.decode(content) as List<dynamic>;
         setState(() {
-          verses = data.entries
-              .map((entry) => {
-                    'verse': entry.key,
-                    'text': entry.value,
-                    'dateMemorized': '',
-                  })
-              .toList();
+          verses = data.map((entry) {
+            final completionDate = DateTime.parse(entry['completionDate']);
+            final expirationDate = completionDate.add(Duration(days: 7));
+            return {
+              'verse': entry['verse'],
+              'completionDate': completionDate,
+              'expirationDate': expirationDate,
+            };
+          }).toList();
         });
+      } else {
+        print("Log file not found.");
       }
     } catch (e) {
-      print('Error loading verses: $e');
+      print('Error loading completion log: $e');
     }
   }
 
-  Future<void> _saveVerse(String verse) async {
-    setState(() {
-      verses.add({'verse': verse, 'text': '', 'dateMemorized': ''});
-    });
+  /// Format a date for display
+  String _formatDate(DateTime date) {
+    return DateFormat.yMMMd().format(date);
   }
 
-  Future<void> _deleteVerse(int index) async {
-    setState(() {
-      verses.removeAt(index);
-    });
+  /// Check if a verse is expired
+  bool _isExpired(DateTime expirationDate) {
+    return DateTime.now().isAfter(expirationDate);
   }
 
   @override
@@ -73,47 +76,27 @@ class _HomePageState extends State<HomePage> {
         children: [
           SizedBox(height: 20),
           Text(
-            'Progress',
+            'Completed Verses',
             style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
           Image.asset('assets/gifs/mountains3.gif', height: 100),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: TextField(
-              controller: _verseController,
-              decoration: InputDecoration(
-                labelText: 'Add a Verse',
-                border: OutlineInputBorder(),
-              ),
-              onSubmitted: (value) {
-                if (value.isNotEmpty) {
-                  _saveVerse(value);
-                  _verseController.clear();
-                }
-              },
-            ),
-          ),
           Expanded(
             child: ListView.builder(
               itemCount: verses.length,
               itemBuilder: (context, index) {
                 final verse = verses[index];
+                final expirationDate = verse['expirationDate'] as DateTime;
+                final isExpired = _isExpired(expirationDate);
                 return ListTile(
                   title: Text(verse['verse']),
-                  subtitle: Text(verse['dateMemorized'].isEmpty
-                      ? 'Expires: TBD'
-                      : 'Expires: ${verse['dateMemorized']}'),
-                  onTap: () {
-                    Navigator.pushNamed(
-                      context,
-                      '/verse',
-                      arguments: verse['verse'],
-                    );
-                  },
-                  trailing: IconButton(
-                    icon: Icon(Icons.delete),
-                    onPressed: () => _deleteVerse(index),
+                  subtitle: Text(
+                    isExpired
+                        ? 'Expired on ${_formatDate(expirationDate)}'
+                        : 'Expires on ${_formatDate(expirationDate)}',
                   ),
+                  trailing: isExpired
+                      ? Icon(Icons.warning, color: Colors.red)
+                      : Icon(Icons.check_circle, color: Colors.green),
                 );
               },
             ),
