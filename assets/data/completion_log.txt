@@ -1,0 +1,5 @@
+[
+  { "verse": "John 3:16", "completionDate": "2025-01-15" },
+  { "verse": "Psalm 23:1", "completionDate": "2025-01-18" },
+  { "verse": "Romans 8:28", "completionDate": "2025-01-20" }
+]
