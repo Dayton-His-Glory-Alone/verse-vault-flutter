@@ -19,30 +19,35 @@ class _HomePageState extends State<HomePage> {
   }
 
   /// Load the completion log from a local file
-  Future<void> _loadCompletionLog() async {
-    try {
-      final file = File(_logFilePath);
-      if (file.existsSync()) {
-        final content = await file.readAsString();
-        final data = json.decode(content) as List<dynamic>;
-        setState(() {
-          verses = data.map((entry) {
-            final completionDate = DateTime.parse(entry['completionDate']);
-            final expirationDate = completionDate.add(Duration(days: 7));
-            return {
-              'verse': entry['verse'],
-              'completionDate': completionDate,
-              'expirationDate': expirationDate,
-            };
-          }).toList();
-        });
-      } else {
-        print("Log file not found.");
-      }
-    } catch (e) {
-      print('Error loading completion log: $e');
+/// Load the completion log from a local file
+Future<void> _loadCompletionLog() async {
+  try {
+    final file = File(_logFilePath);
+    if (file.existsSync()) {
+      final content = await file.readAsString();
+      final data = json.decode(content) as List<dynamic>;
+      setState(() {
+        verses = data.map((entry) {
+          final completionDate = DateTime.parse(entry['completionDate']);
+          final expirationDate = completionDate.add(Duration(days: 7));
+          return {
+            'verse': entry['verse'],
+            'completionDate': completionDate,
+            'expirationDate': expirationDate,
+          };
+        }).toList();
+
+        // Sort verses by expiration date (closest to expiring first)
+        verses.sort((a, b) =>
+            (a['expirationDate'] as DateTime).compareTo(b['expirationDate'] as DateTime));
+      });
+    } else {
+      print("Log file not found.");
     }
+  } catch (e) {
+    print('Error loading completion log: $e');
   }
+}
 
   /// Format a date for display
   String _formatDate(DateTime date) {
