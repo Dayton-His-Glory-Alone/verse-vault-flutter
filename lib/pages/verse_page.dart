@@ -14,13 +14,22 @@ class VersePage extends StatefulWidget {
 
 class _VersePageState extends State<VersePage> {
   int currentMode = 0;
-  String verseReference = "Romans 8:1"; // Example reference
+  String? verseReference; // Nullable until initialized
   String? verseText;
 
   @override
   void initState() {
     super.initState();
-    _loadVerse();
+    // Delay accessing the ModalRoute until after initState
+    Future.microtask(() {
+      final args = ModalRoute.of(context)?.settings.arguments;
+      setState(() {
+        verseReference = args as String?;
+      });
+      if (verseReference != null) {
+        _loadVerse(); // Load verse once the reference is set
+      }
+    });
     _loadProgress();
   }
 
@@ -56,9 +65,8 @@ class _VersePageState extends State<VersePage> {
 
   @override
   Widget build(BuildContext context) {
-    final String verseReference = ModalRoute.of(context)?.settings.arguments as String;
-    if (verseText == null) {
-      // Show loading indicator while fetching the verse
+    if (verseReference == null || verseText == null) {
+      // Show loading indicator while fetching the verse reference or text
       return Scaffold(
         appBar: AppBar(title: Text("Loading...")),
         body: Center(child: CircularProgressIndicator()),
@@ -70,7 +78,7 @@ class _VersePageState extends State<VersePage> {
     switch (currentMode) {
       case 0:
         modeWidget = FlashcardMode(
-          verseReference: verseReference,
+          verseReference: verseReference!,
           verseText: verseText!,
           onComplete: _onModeComplete,
         );
