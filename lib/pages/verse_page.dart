@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
+import 'dart:io';
+import 'package:path_provider/path_provider.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 import 'flashcard_mode.dart';
@@ -14,26 +16,24 @@ class VersePage extends StatefulWidget {
 
 class _VersePageState extends State<VersePage> {
   int currentMode = 0;
-  String? verseReference; // Nullable until initialized
+  String? verseReference;
   String? verseText;
 
   @override
   void initState() {
     super.initState();
-    // Delay accessing the ModalRoute until after initState
     Future.microtask(() {
       final args = ModalRoute.of(context)?.settings.arguments;
       setState(() {
         verseReference = args as String?;
       });
       if (verseReference != null) {
-        _loadVerse(); // Load verse once the reference is set
+        _loadVerse();
       }
     });
     _loadProgress();
   }
 
-  /// Load the verse text from the JSON file
   Future<void> _loadVerse() async {
     try {
       final String jsonString = await rootBundle.loadString('assets/data/verses.json');
@@ -49,24 +49,44 @@ class _VersePageState extends State<VersePage> {
     }
   }
 
-  /// Load the user's progress
   Future<void> _loadProgress() async {
     currentMode = await ProgressManager.getCurrentMode();
     setState(() {});
   }
 
-  /// Handle mode completion
+  Future<void> _saveCompletion() async {
+    if (verseReference == null) return;
+
+    try {
+      final directory = await getApplicationDocumentsDirectory();
+      final file = File('${directory.path}/completion_log.txt');
+
+      final String logEntry =
+          '${DateTime.now()}: Completed $verseReference\n';
+
+      await file.writeAsString(logEntry, mode: FileMode.append);
+    } catch (e) {
+      print("Error saving completion log: $e");
+    }
+  }
+
   void _onModeComplete() async {
     setState(() {
       currentMode++;
     });
+
+    if (currentMode >= 3) {
+      await _saveCompletion();
+      setState(() {
+        currentMode = 0; // Reset the mode after completing all
+      });
+    }
     await ProgressManager.setCurrentMode(currentMode);
   }
 
   @override
   Widget build(BuildContext context) {
     if (verseReference == null || verseText == null) {
-      // Show loading indicator while fetching the verse reference or text
       return Scaffold(
         appBar: AppBar(title: Text("Loading...")),
         body: Center(child: CircularProgressIndicator()),
