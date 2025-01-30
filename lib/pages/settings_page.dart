@@ -42,6 +42,25 @@ class SettingsPage extends StatelessWidget {
               ),
             ),
             Divider(),
+ListTile(
+  title: Text('Translation'),
+  subtitle: Text('Change Bible Translation'),
+  trailing: DropdownButton<String>(
+    value: selectedTranslation,
+    items: <String>['KJV', 'ESV'].map<DropdownMenuItem<String>>((String value) {
+      return DropdownMenuItem<String>(
+        value: value,
+        child: Text(value),
+      );
+    }).toList(),
+    onChanged: (String? newValue) {
+      setState(() {
+        selectedTranslation = newValue!;
+      });
+    },
+  ),
+),
+            Divider(),
             ListTile(
               title: Text('Reset Progress'),
               subtitle: Text('Clear all memorized verses'),
