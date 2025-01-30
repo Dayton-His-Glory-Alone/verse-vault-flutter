@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
+import 'verse_page.dart'; // Make sure to import the VersePage
 
-class SettingsPage extends StatelessWidget {
+class SettingsPage extends StatefulWidget {
+  @override
+  _SettingsPageState createState() => _SettingsPageState();
+}
+
+class _SettingsPageState extends State<SettingsPage> {
+  String selectedTranslation = 'KJV';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,24 +50,31 @@ class SettingsPage extends StatelessWidget {
               ),
             ),
             Divider(),
-ListTile(
-  title: Text('Translation'),
-  subtitle: Text('Change Bible Translation'),
-  trailing: DropdownButton<String>(
-    value: selectedTranslation,
-    items: <String>['KJV', 'ESV'].map<DropdownMenuItem<String>>((String value) {
-      return DropdownMenuItem<String>(
-        value: value,
-        child: Text(value),
-      );
-    }).toList(),
-    onChanged: (String? newValue) {
-      setState(() {
-        selectedTranslation = newValue!;
-      });
-    },
-  ),
-),
+            ListTile(
+              title: Text('Translation'),
+              subtitle: Text('Change Bible Translation'),
+              trailing: DropdownButton<String>(
+                value: selectedTranslation,
+                items: <String>['KJV', 'ESV'].map<DropdownMenuItem<String>>((String value) {
+                  return DropdownMenuItem<String>(
+                    value: value,
+                    child: Text(value),
+                  );
+                }).toList(),
+                onChanged: (String? newValue) {
+                  setState(() {
+                    selectedTranslation = newValue!;
+                  });
+                  // Navigate to VersePage with the selected translation
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => VersePage(selectedTranslation: selectedTranslation),
+                    ),
+                  );
+                },
+              ),
+            ),
             Divider(),
             ListTile(
               title: Text('Reset Progress'),
