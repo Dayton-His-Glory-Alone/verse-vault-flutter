@@ -1,13 +1,37 @@
 import 'package:flutter/material.dart';
-import 'verse_page.dart'; // Make sure to import the VersePage
+import 'package:shared_preferences/shared_preferences.dart';
+import 'verse_page.dart';
 
 class SettingsPage extends StatefulWidget {
+  final Function(bool) onThemeChanged;
+  final bool isDarkMode;
+
+  SettingsPage({required this.onThemeChanged, required this.isDarkMode});
+
   @override
   _SettingsPageState createState() => _SettingsPageState();
 }
 
 class _SettingsPageState extends State<SettingsPage> {
   String selectedTranslation = 'ESV';
+  late bool isDarkMode;
+
+  @override
+  void initState() {
+    super.initState();
+    isDarkMode = widget.isDarkMode;
+  }
+
+  void _toggleDarkMode(bool value) async {
+    setState(() {
+      isDarkMode = value;
+    });
+
+    widget.onThemeChanged(value);
+
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('isDarkMode', value);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -32,10 +56,8 @@ class _SettingsPageState extends State<SettingsPage> {
               title: Text('Theme'),
               subtitle: Text('Light / Dark Mode'),
               trailing: Switch(
-                value: false,
-                onChanged: (bool value) {
-                  // Add functionality for theme change
-                },
+                value: isDarkMode,
+                onChanged: _toggleDarkMode,
               ),
             ),
             Divider(),
@@ -44,9 +66,7 @@ class _SettingsPageState extends State<SettingsPage> {
               subtitle: Text('Enable daily reminders'),
               trailing: Switch(
                 value: true,
-                onChanged: (bool value) {
-                  // Add functionality for notifications
-                },
+                onChanged: (bool value) {},
               ),
             ),
             Divider(),
@@ -65,7 +85,6 @@ class _SettingsPageState extends State<SettingsPage> {
                   setState(() {
                     selectedTranslation = newValue!;
                   });
-                  // Navigate to VersePage with the selected translation
                   Navigator.push(
                     context,
                     MaterialPageRoute(
@@ -81,9 +100,7 @@ class _SettingsPageState extends State<SettingsPage> {
               subtitle: Text('Clear all memorized verses'),
               trailing: IconButton(
                 icon: Icon(Icons.delete, color: Colors.red),
-                onPressed: () {
-                  // Add functionality to reset progress
-                },
+                onPressed: () {},
               ),
             ),
           ],
