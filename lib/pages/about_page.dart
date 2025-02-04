@@ -22,7 +22,7 @@ class AboutPage extends StatelessWidget {
               ),
               SizedBox(height: 10),
               Text(
-                "My wife and I were trying to memorize Romans 8 together on a tradition called Monday Memory. We had a good start but had trouble refreshing on the verses we already learned. I wanted Monday Memory to be both fun and helpful. So, I set out to create a Scripture memory app that made learning Scripture like a game. It has been a great way to engage my wife and I in Scripture and I hope it does the same for you.r",
+                "My wife and I were trying to memorize Romans 8 together on a tradition called Monday Memory. We had a good start but had trouble refreshing on the verses we already learned. I wanted Monday Memory to be both fun and helpful. So, I set out to create a Scripture memory app that made learning Scripture like a game. It has been a great way to engage my wife and I in Scripture and I hope it does the same for you.",
                 style: TextStyle(fontSize: 16),
               ),
               SizedBox(height: 20),
