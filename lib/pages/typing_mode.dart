@@ -51,8 +51,8 @@ class _TypingModeState extends State<TypingMode> {
         correctWords++;
         currentWordIndex++;
         incorrectAttempts = 0;
-        correctnessPercentage =
-            100.0 - ((incorrectAttempts / totalWords) * 100);
+        correctnessPercentage = (correctWords / totalWords) *
+            100; // Update correctness based on correct words
         showCoinAnimation = true;
         if (currentWordIndex == words.length) {
           widget.onComplete();
@@ -76,8 +76,8 @@ class _TypingModeState extends State<TypingMode> {
                 true; // Show completion GIF when verse is complete
           }
         }
-        correctnessPercentage =
-            100.0 - ((incorrectAttempts / totalWords) * 100);
+        correctnessPercentage = (correctWords / totalWords) *
+            100; // Update correctness based on correct words
       });
 
       // Reset the red flash after a short delay
@@ -103,7 +103,8 @@ class _TypingModeState extends State<TypingMode> {
       context: context,
       builder: (context) => AlertDialog(
         title: Text("Congratulations!"),
-        content: Text("You have successfully completed the verse."),
+        content: Text(
+            "You have successfully completed the verse.\nAccuracy: ${correctnessPercentage.toStringAsFixed(1)}%"),
         actions: [
           TextButton(
             onPressed: () {
