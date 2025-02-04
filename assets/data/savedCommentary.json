@@ -1,4 +1,309 @@
 [
+       {
+    "verseReference": "Romans 1:1",
+    "commentary": "Paul introduces himself as a servant of Christ Jesus, called to be an apostle, set apart for the gospel of God.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 1:2",
+    "commentary": "The gospel was promised beforehand through the prophets in the Holy Scriptures, showing its continuity with the Old Testament.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 1:3",
+    "commentary": "The gospel concerns God's Son, who was descended from David according to the flesh, emphasizing Jesus' humanity and messianic lineage.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 1:4",
+    "commentary": "Jesus was declared to be the Son of God in power by His resurrection from the dead, affirming His divinity and victory over sin and death.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 1:5",
+    "commentary": "Through Christ, Paul received grace and apostleship to bring about the obedience of faith among all the nations for the sake of His name.",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 1:6",
+    "commentary": "The Romans are included among those called to belong to Jesus Christ, showing the universal scope of the gospel.",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 1:7",
+    "commentary": "Paul addresses the Romans as loved by God and called to be saints, emphasizing their identity in Christ and the grace and peace available to them.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 1:8",
+    "commentary": "Paul thanks God for the Romans because their faith is proclaimed in all the world, demonstrating the impact of their witness.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 1:9",
+    "commentary": "Paul serves God with his spirit in the gospel of His Son, showing his wholehearted dedication to the ministry of the gospel.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 1:10",
+    "commentary": "Paul prays that he may come to the Romans, asking God to grant him success in his plans to visit them.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 1:11",
+    "commentary": "Paul longs to see the Romans to impart some spiritual gift to strengthen them, showing his pastoral heart.",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 1:12",
+    "commentary": "Paul desires mutual encouragement among the believers, emphasizing the communal nature of the Christian faith.",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 1:13",
+    "commentary": "Paul explains that he has often intended to come to the Romans but has been prevented, showing his earnest desire to minister to them.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 1:14",
+    "commentary": "Paul feels obligated to preach the gospel to both Greeks and barbarians, the wise and the foolish, demonstrating the universality of the gospel.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 1:15",
+    "commentary": "Paul is eager to preach the gospel to the Romans, showing his readiness to fulfill his calling.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 1:16",
+    "commentary": "Paul is not ashamed of the gospel, for it is the power of God for salvation to everyone who believes, to the Jew first and also to the Greek.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 1:17",
+    "commentary": "The righteousness of God is revealed in the gospel, from faith for faith, as it is written, 'The righteous shall live by faith.'",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 1:18",
+    "commentary": "The wrath of God is revealed against all ungodliness and unrighteousness of men, who suppress the truth in unrighteousness.",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 1:19",
+    "commentary": "What can be known about God is plain to them, because God has shown it to them in creation.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 1:20",
+    "commentary": "God's invisible attributes, namely His eternal power and divine nature, have been clearly perceived in the things that have been made, leaving humanity without excuse.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 1:21",
+    "commentary": "Although they knew God, they did not honor Him as God or give thanks to Him, but their thinking became futile, and their foolish hearts were darkened.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 1:22",
+    "commentary": "Claiming to be wise, they became fools, exchanging the glory of the immortal God for images resembling mortal man and animals.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 1:23",
+    "commentary": "They exchanged the glory of the immortal God for images resembling mortal man and animals, demonstrating the depth of their idolatry.",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 1:24",
+    "commentary": "God gave them up in the lusts of their hearts to impurity, to the dishonoring of their bodies among themselves.",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 1:25",
+    "commentary": "They exchanged the truth about God for a lie and worshiped and served the creature rather than the Creator, who is blessed forever! Amen.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 1:26",
+    "commentary": "God gave them up to dishonorable passions, as their women exchanged natural relations for those contrary to nature.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 1:27",
+    "commentary": "The men likewise gave up natural relations with women and were consumed with passion for one another, committing shameless acts and receiving the due penalty for their error.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 1:28",
+    "commentary": "Since they did not see fit to acknowledge God, God gave them up to a debased mind to do what ought not to be done.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 1:29",
+    "commentary": "They were filled with all manner of unrighteousness, evil, covetousness, malice, and envy, demonstrating the depth of human sinfulness.",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 1:30",
+    "commentary": "They are slanderers, haters of God, insolent, haughty, boastful, inventors of evil, disobedient to parents, and foolish.",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 1:31",
+    "commentary": "They are faithless, heartless, and ruthless, showing the complete moral degradation of those who reject God.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 1:32",
+    "commentary": "Though they know God's righteous decree that those who practice such things deserve to die, they not only do them but give approval to those who practice them.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 2:1",
+    "commentary": "Therefore you have no excuse, O man, every one of you who judges, for in passing judgment on another you condemn yourself, because you, the judge, practice the very same things.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 2:2",
+    "commentary": "We know that the judgment of God rightly falls on those who practice such things, affirming God's impartial justice.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 2:3",
+    "commentary": "Do you suppose, O man, that when you judge those who practice such things and yet do them yourself, you will escape the judgment of God?",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 2:4",
+    "commentary": "Or do you presume on the riches of His kindness and forbearance and patience, not knowing that God's kindness is meant to lead you to repentance?",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 2:5",
+    "commentary": "But because of your hard and impenitent heart you are storing up wrath for yourself on the day of wrath when God's righteous judgment will be revealed.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 2:6",
+    "commentary": "He will render to each one according to his works, showing that God's judgment is based on truth and justice.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 2:7",
+    "commentary": "To those who by patience in well-doing seek for glory and honor and immortality, He will give eternal life.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 2:8",
+    "commentary": "But for those who are self-seeking and do not obey the truth, but obey unrighteousness, there will be wrath and fury.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 2:9",
+    "commentary": "There will be tribulation and distress for every human being who does evil, the Jew first and also the Greek.",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 2:10",
+    "commentary": "But glory and honor and peace for everyone who does good, the Jew first and also the Greek, showing God's impartiality.",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 2:11",
+    "commentary": "For God shows no partiality, affirming that His judgment is based on truth, not on ethnic or cultural distinctions.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 2:12",
+    "commentary": "For all who have sinned without the law will also perish without the law, and all who have sinned under the law will be judged by the law.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 2:13",
+    "commentary": "For it is not the hearers of the law who are righteous before God, but the doers of the law who will be justified.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 2:14",
+    "commentary": "For when Gentiles, who do not have the law, by nature do what the law requires, they are a law to themselves, even though they do not have the law.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 2:15",
+    "commentary": "They show that the work of the law is written on their hearts, while their conscience also bears witness, and their conflicting thoughts accuse or even excuse them.",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 2:16",
+    "commentary": "On that day when, according to my gospel, God judges the secrets of men by Christ Jesus, showing that all will be held accountable.",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 2:17",
+    "commentary": "But if you call yourself a Jew and rely on the law and boast in God, Paul addresses the Jewish audience directly.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 2:18",
+    "commentary": "And know His will and approve what is excellent, because you are instructed from the law, showing the privilege of the Jews.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 2:19",
+    "commentary": "And if you are sure that you yourself are a guide to the blind, a light to those who are in darkness, Paul challenges their self-righteousness.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 2:20",
+    "commentary": "An instructor of the foolish, a teacher of children, having in the law the embodiment of knowledge and truth, Paul highlights their responsibility.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 2:21",
+    "commentary": "You then who teach others, do you not teach yourself? While you preach against stealing, do you steal?",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 2:22",
+    "commentary": "You who say that one must not commit adultery, do you commit adultery? You who abhor idols, do you rob temples?",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 2:23",
+    "commentary": "You who boast in the law dishonor God by breaking the law, showing the inconsistency of their actions.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 2:24",
+    "commentary": "For, as it is written, 'The name of God is blasphemed among the Gentiles because of you,' demonstrating the consequences of their hypocrisy.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 2:25",
+    "commentary": "For circumcision indeed is of value if you obey the law, but if you break the law, your circumcision becomes uncircumcision.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 2:26",
+    "commentary": "So, if a man who is uncircumcised keeps the precepts of the law, will not his uncircumcision be regarded as circumcision?",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 2:27",
+    "commentary": "Then he who is physically uncircumcised but keeps the law will condemn you who have the written code and circumcision but break the law.",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 2:28",
+    "commentary": "For no one is a Jew who is merely one outwardly, nor is circumcision outward and physical.",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 2:29",
+    "commentary": "But a Jew is one inwardly, and circumcision is a matter of the heart, by the Spirit, not by the letter. His praise is not from man but from God.",
+    "commentaryReference": "ESV Study Bible"
+  }, 
       {
     "verseReference": "Romans 8:1",
     "commentary": "This verse declares the freedom from guilt and punishment for believers, emphasizing the transformative power of being in Christ.",
