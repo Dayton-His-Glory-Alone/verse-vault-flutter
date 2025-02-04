@@ -1,4 +1,364 @@
 [
+      {
+    "verseReference": "Romans 8:1",
+    "commentary": "This verse declares the freedom from guilt and punishment for believers, emphasizing the transformative power of being in Christ.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 8:2",
+    "commentary": "Paul contrasts the life-giving Spirit with the law, which could not save but only condemn.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 8:3",
+    "commentary": "God's solution to sin is the incarnation and sacrifice of Jesus, who condemned sin in the flesh.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 8:4",
+    "commentary": "Believers fulfill the law through the power of the Holy Spirit, walking not according to the flesh but according to the Spirit.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 8:5",
+    "commentary": "Paul contrasts the mindset of the flesh with that of the Spirit, emphasizing the importance of spiritual focus.",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 8:6",
+    "commentary": "The consequences of our mindset are either death or life; setting the mind on the Spirit brings life and peace.",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 8:7",
+    "commentary": "The flesh is inherently opposed to God and cannot submit to His law.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 8:8",
+    "commentary": "Only through the Spirit can believers please God; those in the flesh cannot.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 8:9",
+    "commentary": "The indwelling Spirit is the mark of a true believer, distinguishing them from those who do not belong to Christ.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 8:10",
+    "commentary": "The Spirit gives life even though the body is still subject to death because of sin.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 8:11",
+    "commentary": "The Spirit guarantees the future resurrection of believers, just as He raised Christ from the dead.",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 8:12",
+    "commentary": "Believers are obligated to live by the Spirit, not the flesh.",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 8:13",
+    "commentary": "The choice between life and death is determined by our obedience to the Spirit and putting to death the deeds of the body.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 8:14",
+    "commentary": "Those led by the Spirit are sons of God, demonstrating their adoption into God's family.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 8:15",
+    "commentary": "Believers receive the Spirit of adoption, enabling them to cry out, 'Abba, Father,' in intimate relationship with God.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 8:16",
+    "commentary": "The Spirit bears witness with our spirit that we are children of God, assuring us of our identity in Christ.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 8:17",
+    "commentary": "As children of God, believers are heirs with Christ, sharing in both His sufferings and His glory.",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 8:18",
+    "commentary": "The sufferings of this present time are not worth comparing with the glory that will be revealed in us.",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 8:19",
+    "commentary": "Creation eagerly awaits the revelation of the sons of God, longing for the restoration of all things.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 8:20",
+    "commentary": "Creation was subjected to futility, not willingly, but because of Him who subjected it, in hope.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 8:21",
+    "commentary": "Creation itself will be set free from its bondage to corruption and obtain the freedom of the glory of the children of God.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 8:22",
+    "commentary": "The whole creation has been groaning together in the pains of childbirth until now, awaiting redemption.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 8:23",
+    "commentary": "Believers, who have the firstfruits of the Spirit, groan inwardly as they wait for the redemption of their bodies.",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 8:24",
+    "commentary": "For in this hope we were saved. Now hope that is seen is not hope, for who hopes for what he sees?",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 8:25",
+    "commentary": "But if we hope for what we do not see, we wait for it with patience.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 8:26",
+    "commentary": "The Spirit helps us in our weakness, interceding for us with groanings too deep for words.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 8:27",
+    "commentary": "God, who searches hearts, knows the mind of the Spirit, because the Spirit intercedes for the saints according to the will of God.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 8:28",
+    "commentary": "And we know that for those who love God all things work together for good, for those who are called according to His purpose.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 8:29",
+    "commentary": "For those whom He foreknew He also predestined to be conformed to the image of His Son, in order that He might be the firstborn among many brothers.",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 8:30",
+    "commentary": "And those whom He predestined He also called, and those whom He called He also justified, and those whom He justified He also glorified.",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 8:31",
+    "commentary": "What then shall we say to these things? If God is for us, who can be against us?",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 8:32",
+    "commentary": "He who did not spare His own Son but gave Him up for us all, how will He not also with Him graciously give us all things?",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 8:33",
+    "commentary": "Who shall bring any charge against God's elect? It is God who justifies.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 8:34",
+    "commentary": "Who is to condemn? Christ Jesus is the one who died—more than that, who was raised—who is at the right hand of God, who indeed is interceding for us.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 8:35",
+    "commentary": "Who shall separate us from the love of Christ? Shall tribulation, or distress, or persecution, or famine, or nakedness, or danger, or sword?",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 8:36",
+    "commentary": "As it is written, 'For your sake we are being killed all the day long; we are regarded as sheep to be slaughtered.'",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 8:37",
+    "commentary": "No, in all these things we are more than conquerors through Him who loved us.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 8:38",
+    "commentary": "For I am sure that neither death nor life, nor angels nor rulers, nor things present nor things to come, nor powers,",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 8:39",
+    "commentary": "Nor height nor depth, nor anything else in all creation, will be able to separate us from the love of God in Christ Jesus our Lord.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+      {
+    "verseReference": "Romans 9:1",
+    "commentary": "Paul expresses his deep sorrow and anguish for his fellow Israelites, showing his heartfelt concern for their salvation.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 9:2",
+    "commentary": "Paul's grief for the Israelites is so great that he wishes he could be accursed for their sake, demonstrating his selfless love for his people.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 9:3",
+    "commentary": "Paul's willingness to be cut off from Christ for the sake of his fellow Jews reflects the depth of his love and his identification with Moses' intercession for Israel.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 9:4",
+    "commentary": "Paul lists the privileges of Israel, including adoption, glory, covenants, the law, worship, and promises, highlighting their unique relationship with God.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 9:5",
+    "commentary": "The patriarchs belong to Israel, and from their race, according to the flesh, comes the Christ, who is God over all, blessed forever. This verse affirms the deity of Christ.",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 9:6",
+    "commentary": "Paul clarifies that not all who are descended from Israel belong to Israel, indicating that true Israel is defined by faith, not merely physical descent.",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 9:7",
+    "commentary": "Not all of Abraham's children are his true offspring, as seen in the case of Isaac being the child of promise, not Ishmael.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 9:8",
+    "commentary": "The children of the promise are counted as offspring, emphasizing that God's promises are fulfilled through His sovereign choice, not human effort.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 9:9",
+    "commentary": "The promise to Sarah was that she would have a son, demonstrating that God's promises are fulfilled according to His timing and purpose.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 9:10",
+    "commentary": "Paul uses the example of Rebekah's children, Jacob and Esau, to illustrate God's sovereign choice in election.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 9:11",
+    "commentary": "God's purpose in election is not based on works but on His call, demonstrating that His choice is unconditional and rooted in His sovereign will.",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 9:12",
+    "commentary": "God declared that the older would serve the younger, showing that His election is not based on human merit or tradition.",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 9:13",
+    "commentary": "As it is written, 'Jacob I loved, but Esau I hated,' highlighting God's sovereign right to choose according to His purpose.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 9:14",
+    "commentary": "Paul anticipates the objection that God's election might be unjust, affirming that God's choices are always righteous.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 9:15",
+    "commentary": "God's mercy is not earned but is given according to His sovereign will, as He declares to Moses, 'I will have mercy on whom I have mercy.'",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 9:16",
+    "commentary": "Salvation does not depend on human will or effort but on God's mercy, emphasizing the sovereignty of divine grace.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 9:17",
+    "commentary": "God raised Pharaoh up to demonstrate His power and proclaim His name throughout the earth, showing that even opposition serves His purposes.",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 9:18",
+    "commentary": "God has mercy on whom He wills, and He hardens whom He wills, demonstrating His absolute sovereignty over human hearts.",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 9:19",
+    "commentary": "Paul addresses the objection that if God hardens hearts, how can He hold anyone accountable, affirming that God's ways are beyond human understanding.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 9:20",
+    "commentary": "Who are we to question God? The creature has no right to challenge the Creator's decisions, as His wisdom and justice are perfect.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 9:21",
+    "commentary": "God, as the potter, has the right to make vessels for honorable and dishonorable use, illustrating His sovereign authority over His creation.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 9:22",
+    "commentary": "God endures with patience vessels of wrath prepared for destruction, demonstrating His longsuffering and justice.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 9:23",
+    "commentary": "God prepares vessels of mercy for glory, showing His grace and purpose in saving those whom He has chosen.",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 9:24",
+    "commentary": "These vessels of mercy include not only Jews but also Gentiles, highlighting the universal scope of God's saving plan.",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 9:25",
+    "commentary": "As God says in Hosea, 'Those who were not my people I will call my people,' showing His inclusion of the Gentiles in His covenant.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 9:26",
+    "commentary": "In the very place where it was said, 'You are not my people,' they will be called 'sons of the living God,' demonstrating God's transforming grace.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 9:27",
+    "commentary": "Though Israel is as numerous as the sand of the sea, only a remnant will be saved, fulfilling the prophecy of Isaiah.",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
+  {
+    "verseReference": "Romans 9:28",
+    "commentary": "The Lord will carry out His sentence on earth with speed and finality, showing the certainty of His judgment.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 9:29",
+    "commentary": "If the Lord of hosts had not left us offspring, we would have been like Sodom and Gomorrah, emphasizing God's mercy in preserving a remnant.",
+    "commentaryReference": "John Calvin, Commentary on Romans"
+  },
+  {
+    "verseReference": "Romans 9:30",
+    "commentary": "Gentiles, who did not pursue righteousness, have attained it through faith, while Israel, pursuing the law, failed to attain it.",
+    "commentaryReference": "Matthew Henry, Commentary on the Whole Bible"
+  },
+  {
+    "verseReference": "Romans 9:31",
+    "commentary": "Israel, seeking righteousness through the law, did not succeed because they pursued it by works rather than by faith.",
+    "commentaryReference": "ESV Study Bible"
+  },
+  {
+    "verseReference": "Romans 9:32",
+    "commentary": "Israel stumbled over the stumbling stone of Christ, failing to recognize that righteousness comes through faith, not works.",
+    "commentaryReference": "John MacArthur, The MacArthur Bible Commentary"
+  },
+  {
+    "verseReference": "Romans 9:33",
+    "commentary": "As it is written, 'Behold, I am laying in Zion a stone of stumbling, and a rock of offense; and whoever believes in him will not be put to shame.'",
+    "commentaryReference": "N.T. Wright, Paul for Everyone: Romans"
+  },
     {
       "verseReference": "1 John 1:6",
       "commentary": "He who is alone with his sin is utterly alone. It may be that Christians, notwithstanding corporate worship, common prayer, and all their fellowship in service, may still be left to their loneliness. The final breakthrough to fellowship does not occur because, though they have fellowship with one another as believers and as devout people, they do not have fellowship as the undevout, as sinners. The pious fellowship permits no one to be a sinner. So everybody must conceal his sin from himself and from the fellowship. We dare not be sinners. Many Christians are unthinkably horrified when a real sinner is suddenly discovered among the righteous. So we remain alone with our sin, living in lies and hypocrisy.",
